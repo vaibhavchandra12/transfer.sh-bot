@@ -15,4 +15,4 @@ Visit [this](https://my.telegram.org/) link to get API ID and API HASH.
 
 ### Host on Heroku or on your own Server
 
- `Make sure you have added your bot token, api id, api_hash before you host on Heroku or on your own Server.`
+ `Make sure you have added your bot token, api id, api_hash before you host on Heroku or on your own Server`
