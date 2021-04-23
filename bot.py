@@ -7,11 +7,11 @@ import datetime
 import aiohttp
 import asyncio
 
-api_id = int("API ID")
-api_hash = "API HASH"
-bot_token = "BOT TOKEN"
+api_id = int("3819739")
+api_hash = "a6406a4be8d831a0ca474a7834ae2e31"
+bot_token = "1538143282:AAHtFuNLyHmWFwxI_EeTPB0P-9PQBrASyhc"
 
-download_path = "Downloads/"
+download_path = "downloads/"
 
 bot = TelegramClient('Uploader bot', api_id, api_hash).start(bot_token=bot_token)
 
@@ -19,7 +19,7 @@ bot = TelegramClient('Uploader bot', api_id, api_hash).start(bot_token=bot_token
 @bot.on(events.NewMessage(pattern='/start'))
 async def start(event):
     """Send a message when the command /start is issued."""
-    await event.respond('Hi!\nSent any file or direct download link to upload and get the transfer.sh download link')
+    await event.respond('Hi!\n You can sent any file or direct download link to upload and get the transfer.sh download link.\n No Need Of Google Drive.)
     raise events.StopPropagation
 
 @bot.on(events.NewMessage)
